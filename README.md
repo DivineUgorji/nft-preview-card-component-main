@@ -1,6 +1,6 @@
 ![Header](./images/github-header-image.png)
 
-#[Frontend Mentor - NFT preview card component Challenge](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)
+[Frontend Mentor - NFT preview card component Challenge](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)
 
 ## Table of contents
 
@@ -46,7 +46,7 @@ Users should be able to:
 ## Author
 
 - Front end mentor - [@DivineUgorji](https://www.frontendmentor.io/profile/DivineUgorji)
-- Twitter - [@yourusername](https://www.twitter.com/DivineUgorji)
+- Twitter - [@DivineUgorji](https://www.twitter.com/DivineUgorji)
 
 ## Acknowledgments
 
