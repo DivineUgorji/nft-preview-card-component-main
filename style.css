@@ -66,10 +66,6 @@ h6 {
   overflow-wrap: break-word;
 }
 
-* {
-  outline: 2px solid red;
-}
-
 main {
   max-width: 21.875rem;
   min-height: 37.25rem;
