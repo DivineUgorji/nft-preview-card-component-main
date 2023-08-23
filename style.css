@@ -1,0 +1,253 @@
+:root {
+  /* soft blue: */
+  --color-soft-blue: hsl(215, 51%, 70%);
+
+  /* color Cyan: */
+  --color-cyan: hsl(178, 100%, 50%);
+
+  /* Very dark blue (main BG): */
+  --color-primary: hsl(217, 54%, 11%);
+
+  /* - Very dark blue (card BG) */
+  --color-primary-dark: hsl(216, 50%, 16%);
+
+  /* - Very dark blue (line) */
+  --color-line: hsl(215, 32%, 27%);
+
+  /* white color */
+  --color-white: hsl(0, 0%, 100%);
+
+  --font-family: "Outfit", sans-serif;
+
+  --font-weight-regular: 300;
+  --font-weight-thick: 400;
+  --font-weight-bold: 600;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.25rem;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+* {
+  outline: 2px solid red;
+}
+
+main {
+  max-width: 21.875rem;
+  min-height: 37.25rem;
+  margin: 1rem;
+}
+
+body {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card-container {
+  background-color: var(--color-primary-dark);
+  border-radius: 0.5rem;
+  padding: 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.75);
+}
+
+.card__header_image {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.card__header_image img {
+  width: 100%;
+  display: block;
+}
+.card__header_image-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  display: none;
+}
+.card__header_image-overlay img {
+  position: absolute;
+  width: 50px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.card__header_image:hover .card__header_image-overlay {
+  display: block;
+}
+
+.card-container__title {
+  font-family: var(--font-family);
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.75rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.card-container__title:hover {
+  color: var(--color-cyan);
+}
+
+.card-container__text {
+  color: var(--color-soft-blue);
+  font-family: var(--font-family);
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: var(--font-weight-regular);
+  line-height: 1.625rem;
+}
+
+.card-container__flex-group {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.card-container__price {
+  display: flex;
+  align-items: center;
+  gap: 0.48rem;
+  margin-right: auto;
+}
+
+.card-container__price-duration {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.ethereum-icon {
+  width: 0.6875rem;
+  height: 1.125rem;
+}
+
+.card__price-text {
+  color: var(--color-cyan);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-bold);
+  font-size: 1rem;
+  font-style: normal;
+}
+
+.clock-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.card__price-duration {
+  color: var(--color-soft-blue);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: var(--font-weight-thick);
+}
+
+.card-container__line-breaker {
+  width: 100%;
+  background: var(--color-line);
+  margin-top: 1.5rem;
+  height: 0.0625rem;
+  border: none;
+}
+
+.card__profile {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  gap: 0.5rem;
+}
+
+.card__profile-image {
+  width: 2.0625rem;
+  height: 2.0625rem;
+  background: var(--color-primary), cover no-repeat;
+  border: 1px solid var(--color-white);
+  border-radius: 50%;
+  margin-top: 1.38rem;
+}
+
+.card__profile-text {
+  color: var(--color-soft-blue);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-thick);
+  font-size: 1rem;
+  font-style: normal;
+  margin-top: 1.38rem;
+  margin-left: 0.5rem;
+}
+
+.profile__text-span {
+  color: var(--color-white);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-thick);
+  font-size: 1rem;
+  font-style: normal;
+  margin-top: 1.38rem;
+  text-decoration: none;
+}
+
+.profile__text-span:hover {
+  color: var(--color-cyan);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
