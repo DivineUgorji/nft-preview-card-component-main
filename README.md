@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/DivineUgorji/nft-preview-card-component-main)
+- Live Site URL: [Live Site](https://nft-preview-card-component-divine.netlify.app/)
 
 ## My process
 
@@ -50,4 +50,5 @@ Users should be able to:
 
 ## Acknowledgments
 
-Every member of the community.
+To Every member of the community.
+cheers 🥂
